@@ -1,50 +1,33 @@
 # React + TypeScript + Vite
+# Real-Time Collaborative Drawing App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# About
+<p> A real-time collaboration drawing app that allows users to utilize a canvas. Users can draw on a shared canvas and see updates from other users instantly. The app also includes a "Clear Canvas" button to reset the drawing for all connected users.
 
-Currently, two official plugins are available:
+✅ Real-time drawing: Users can draw on a shared canvas, and their strokes appear for all users. <br>
+✅ Live synchronization: Drawings are updated instantly across all connected clients using WebSockets. <br>
+✅ Clear canvas: Any user can clear the canvas, and the update is broadcasted to everyone. <br>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+🚀 Test live using netlify link in description
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+# Technologies Used
 
-- Configure the top-level `parserOptions` property like this:
+Frontend (React + TypeScript)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+    React 
+    TypeScript 
+    Socket.io-client 
+    CSS
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Backend (Node.js + Express)
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+    Node.js & Express
+    Socket.io 
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+# Usage
+
+Open the canvas on two different browsers and draw!
+
+![draw](https://github.com/user-attachments/assets/0e2cf87c-e99b-44d6-9bce-71fa3d0f5fe6)
+
