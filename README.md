@@ -31,3 +31,26 @@ Open the canvas on two different browsers and draw!
 
 ![draw](https://github.com/user-attachments/assets/0e2cf87c-e99b-44d6-9bce-71fa3d0f5fe6)
 
+To get started with the project, follow these steps to clone the repository and run the application locally:
+
+### Cloning the Repository
+
+1. Open the **Command Prompt** (or any terminal you prefer).
+2. Clone the repository by typing the following command:
+```bash
+   git clone https://github.com/PatrickPachacz/colloboration-canvas-app.git
+```
+3. Change into the project directory:
+```bash
+ cd colloboration-canvas-app
+```
+4. Installing Dependencies
+```
+ npm install
+```
+
+5. Running the Application
+```
+ npm run dev
+
+
